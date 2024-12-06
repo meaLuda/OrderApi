@@ -169,11 +169,10 @@ The application follows a clean architecture pattern with the following componen
 ### Project Structure
 ```
 ├── main.go           # Application entry point
-├── handlers/         # HTTP request handlers
-├── services/         # Business logic
-├── models/           # Data structures
-├── middleware/       # HTTP middleware
-└── tests/           # Test files
+├── handlers.go        # HTTP request handlers
+├── services.go         # Business logic
+├── models.go          # Data structures
+├── middleware.go      # HTTP middleware
 ```
 
 ### Components
