@@ -155,13 +155,6 @@ Response:
 }
 ```
 
-### Authentication
-
-All endpoints require an API key to be provided in the header:
-```
-api_key: apitest
-```
-
 ## Architecture
 
 The application follows a clean architecture pattern with the following components:
