@@ -1,0 +1,22 @@
+# Git
+.git
+.gitignore
+
+# IDEs and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build artifacts
+bin/
+tmp/
+
+# Local development
+.env
+*.log
+
+# Docker
+Dockerfile
+.dockerignore
+

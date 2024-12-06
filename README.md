@@ -182,19 +182,6 @@ The application follows a clean architecture pattern with the following componen
 - **Models**: Define data structures and validation
 - **Middleware**: Implement cross-cutting concerns
 
-## Testing
-
-Run the test suite:
-```bash
-go test ./...
-```
-
-Run tests with coverage:
-```bash
-go test ./... -coverprofile=coverage.out
-go tool cover -html=coverage.out
-```
-
 ## Deployment
 
 ### Docker
@@ -209,7 +196,7 @@ Run the container:
 docker run -p 8080:8080 food-ordering-api
 ```
 
-### Traditional Deployment
+### Normal Deployment
 
 1. Build the binary:
 ```bash
