@@ -17,7 +17,7 @@ RUN go mod download
 COPY . .
 
 # Build the application
-RUN CGO_ENABLED=0 GOOS=linux go build -o /app/food-ordering-api
+RUN CGO_ENABLED=0 GOOS=linux go build -o /app/
 
 # Final stage
 FROM alpine:3.19
@@ -32,8 +32,8 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 RUN mkdir -p /app/data
 
 # Copy binary from builder
-COPY --from=builder /app/food-ordering-api /app/
-COPY --from=builder /app/couponbase*.txt /app/data/
+COPY --from=builder /app/ /app/
+COPY --from=builder /app/couponbase*.txt /app/
 
 # Set proper permissions
 RUN chown -R appuser:appgroup /app
